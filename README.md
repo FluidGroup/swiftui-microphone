@@ -42,3 +42,8 @@ on cancellation, interruption, backgrounding, or when the container leaves the s
 The file at `recording.url` is valid for the duration of the async capture action.
 Retain the `MicrophoneRecording` to keep the temporary file longer, or copy it for permanent storage.
 Recording temporarily uses the app's shared audio session; coordinate with any other audio in your app.
+
+To try the recorder or run the optional live-capture test, run
+`mise trust && mise install && mise run demo`. Open `Development/MicrophoneDemo.xcworkspace`
+and run the app on an iPhone or a simulator with audio input. Tap Record and grant microphone
+access before testing the `MicrophoneDemo` scheme. Package unit tests do not require a microphone.
